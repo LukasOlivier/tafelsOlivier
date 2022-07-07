@@ -1,5 +1,5 @@
 "use strict";
-const apiUrl = "https://tafelsolivier.herokuapp.com/bestellen.html";
+const apiUrl = "https://tafelsolivier.herokuapp.com/api";
 
 document.addEventListener("DOMContentLoaded", init);
 
