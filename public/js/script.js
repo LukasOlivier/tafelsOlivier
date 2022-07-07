@@ -1,5 +1,5 @@
 "use strict";
-const apiUrl = "http://127.0.0.1:8000/api"
+const apiUrl = "https://tafelsolivier.herokuapp.com/api"
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
