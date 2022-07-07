@@ -1,0 +1,62 @@
+@media only screen and (max-width: 1080px) {
+    .logo img, .logo{
+        visibility: hidden;
+        width: 0;
+        margin-right: 0;
+    }
+    header{
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .bestelpagina{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .Maps{
+        margin-left: 0;
+    }
+    .bestellen form{
+        width: 20rem;
+    }
+    .data{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    #date_begin{
+        margin-bottom: 1rem;
+    }
+    #date_end{
+        margin: 0;
+    }
+    .Maps{
+        width: 20rem;
+        margin-bottom: 3rem;
+    }
+    .Maps iframe{
+        width: 18rem;
+    }
+    .Maps p{
+        width: 18rem;
+    }
+    .info{
+        height: auto;
+        width: 18rem;
+        font-size: 0.5rem;
+        padding: 1rem;
+    }
+    .Info   li{
+        margin-bottom: 1rem;
+    }
+    .Info li:first-of-type{
+        font-size: 1rem;
+    }
+    .Info .image{
+        height: auto;
+    }
+}

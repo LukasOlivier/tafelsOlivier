@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <script src="../js/helper.js"></script>
+    <script src="../js/contact.js"></script>
+</head>
+<body>
+<header>
+    <nav>
+        <ul class="nav__links">
+            <li><a class="logo" href="index.html"><img src="../assets/LogoTekst.png" alt="logo"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bestellen.html">Bestellen</a></li>
+            <li><a class="cta" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="contact">
+        <h1>Contact:</h1>
+        <ul>
+            <li><em>Tel:</em> 0479-61-66-66</li>
+            <li><em>E-mail:</em> bjorn.olivier@telenet.be</li>
+            <li><em>Adres:</em> Rozenlaan 1 Izegem</li>
+        </ul>
+        <form action="">
+            <div class="names">
+                <div>
+                    <label for="firstname">Voornaam:</label>
+                    <input type="text" id="firstname">
+                </div>
+                <div>
+                    <label for="lastname">Achternaam:</label>
+                    <input type="text" id="lastname">
+                </div>
+            </div>
+            <div class="mail-tel">
+                <div>
+                    <label for="mail">E-mail:</label>
+                    <input type="email" id="mail">
+                </div>
+                <div>
+                    <label for="tel">Tel:</label>
+                    <input type="tel" id="tel">
+                </div>
+            </div>
+            <label for="message">Bericht:</label>
+            <textarea id="message" name="Bericht:" cols="40" rows="5"></textarea>
+            <input type="submit" id="submit" value="Versturen">
+        </form>
+    </div>
+</main>
+</body>
+</html>
