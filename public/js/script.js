@@ -1,5 +1,5 @@
 "use strict";
-const apiUrl = "https://tafelsolivier.herokuapp.com/api"
+const apiUrl = "http://127.0.0.1:8000/api"
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
@@ -16,15 +16,15 @@ function init() {
         const amountOfDays = calculateAmountOfDays();
         const amountOfTables = document.querySelector("#amount").value;
         let price = amountOfDays * amountOfTables * pricePerTable
-        if (isNaN(price)){
+        if (isNaN(price)) {
             price = 0;
         }
         document.querySelector("#price").innerText = `${price}`;
     }
 
-    function calculateAmountOfDays(){
+    function calculateAmountOfDays() {
         const end = new Date(document.querySelector("#till").value)
-        const start =  new Date(document.querySelector("#from").value);
+        const start = new Date(document.querySelector("#from").value);
         const timeDifference = end.getTime() - start.getTime();
         return Math.abs(timeDifference / (1000 * 3600 * 24));
     }
@@ -32,6 +32,8 @@ function init() {
     function processForm(e) {
         e.preventDefault()
         const booking = buildBooking();
+        const occupation = buildOccupation();
+
         fetchFromServer(`${apiUrl}/order`, "POST", booking)
             .then(data => {
                 //displayThankYou();
@@ -68,6 +70,13 @@ function init() {
             till: document.querySelector("#till").value,
             comment: document.querySelector("#commment").value,
             price: document.querySelector("#price").innerText
+        };
+    }
+
+    function buildOccupation() {
+        return {
+            name: document.querySelector("#name").value,
+            amount: document.querySelector("#amount").value,
         };
     }
 }

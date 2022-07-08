@@ -13,16 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/index.html', function () {
+Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/bestellen.html', function () {
+Route::get('/bestellen', function () {
     return view('bestellen');
 });
-Route::get('/contact.html', function () {
+Route::get('/contact', function () {
     return view('contact');
 });
-Route::get('/admin.html', function () {
+Route::get('/admin', function () {
     return view('admin');
 });
